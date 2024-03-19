@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmación de Registro para el Evento</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+<table width="100%" bgcolor="#f0f0f0" cellpadding="10">
+    <tr>
+        <td align="center">
+            <h1 style="color: #007bff;">¡Hola!</h1>
+            <p style="color: #000; font-size: 16px;">Te estamos escribiendo para confirmar tu registro para el siguiente evento:</p>
+            <hr style="border: 0; border-top: 1px solid #ddd;">
+            <h2 style="color: #007bff;" th:text="${mensaje}"></h2>
+            <p style="color: #000; font-size: 16px;" th:text="${fecha}"></p>
+            <p style="color: #000; font-size: 16px;" th:text="${hora}"></p>
+            <p style="color: #000; font-size: 16px;" th:text="${lugar}"></p>
+            <p style="color: #000; font-size: 16px;" th:text="${descripcion}"></p>
+            <p style="color: #000; font-size: 16px;">Por favor, asegúrate de llegar al evento a tiempo y preparado para disfrutar de una experiencia única.</p>
+            <p style="color: #000; font-size: 16px;">Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en ponerte en contacto con nuestro equipo de soporte.</p>
+            <hr style="border: 0; border-top: 1px solid #ddd;">
+            <p style="color: #888; font-size: 14px;">Este es un mensaje automático. Por favor, no respondas a este correo.</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
