@@ -7,6 +7,7 @@ import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.lang.NonNull;
 
 import java.util.Properties;
 
@@ -19,7 +20,8 @@ public class EmailConfig {
 
     @Value("${email.password}")
     private String password;
-
+    
+    @NonNull
     private Properties getMailProperties() {
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");

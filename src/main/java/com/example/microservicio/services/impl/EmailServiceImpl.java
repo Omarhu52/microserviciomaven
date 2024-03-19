@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import javax.mail.internet.MimeMessage;
+import org.springframework.lang.NonNull;
 
 
 @Service
@@ -22,7 +23,7 @@ public class EmailServiceImpl implements IEmailService {
     }
 
     @Override
-    public void enviarCorreo(CorreoRequest correoRequest) {
+    public void enviarCorreo(@NonNull CorreoRequest correoRequest) {
         try {
             MimeMessage message = javaMailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
